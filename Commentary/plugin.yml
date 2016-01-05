@@ -1,1 +1,23 @@
+name: Commentary
+main: Sunshine\Commentary
+version: 0.4
+api: [1.12.0]
+load: POSTWORLD
+author: Sunshine
+authors: [opp1005]
+description: 挨拶プラグインです。
+website:
+commands:
+ c:
+  description: "挨拶ができます。"
+  usage: " /c <hello or bye>"
+  permission: Commentary.guest
+permissions: 
+ Commentary: 
+  default: op
+  descripsion: "Commentary's command."
+  children: 
+   Commentary.gurst:
+   default: true
+   descripsion: "挨拶ができます。"
 
